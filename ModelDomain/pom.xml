@@ -3,5 +3,4 @@
   <groupId>com.model.domain</groupId>
   <artifactId>ModelDomain</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
 </project>
