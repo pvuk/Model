@@ -5,7 +5,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.pvuk.controller.bean.vehicleBean;
+import com.pvuk.controller.bean.VehicleBean;
 
 @Controller
 public class VehicleStandController {
@@ -14,7 +14,7 @@ public class VehicleStandController {
 	public String vehicleHome(ModelMap modelMap) {
 		modelMap.addAttribute("message", "Welcome to Vehicle Stand");
 		
-		vehicleBean vehicleBean = new vehicleBean();
+		VehicleBean vehicleBean = new VehicleBean();
 		modelMap.addAttribute("vehicleBean", vehicleBean);
 		
 		return "vehiclestand/vehiclestand";

@@ -3,7 +3,7 @@ package com.pvuk.controller.bean;
 import java.util.Date;
 import java.util.List;
 
-public class vehicleBean {
+public class VehicleBean {
 
 	private Integer vehicleId;
 	private String registrationNumber;
@@ -16,7 +16,7 @@ public class vehicleBean {
 	private String address;
 	private Date inTime;
 	private Date outTime;
-	private Boolean isTokenGiven;
+	private Boolean isTokenLost;
 	private Boolean isMonthlyPass;
 
 	public Integer getVehicleId() {
@@ -91,12 +91,12 @@ public class vehicleBean {
 		this.outTime = outTime;
 	}
 
-	public Boolean getIsTokenGiven() {
-		return isTokenGiven;
+	public Boolean getIsTokenLost() {
+		return isTokenLost;
 	}
 
-	public void setIsTokenGiven(Boolean isTokenGiven) {
-		this.isTokenGiven = isTokenGiven;
+	public void setIsTokenLost(Boolean isTokenLost) {
+		this.isTokenLost = isTokenLost;
 	}
 
 	public Boolean getIsMonthlyPass() {
