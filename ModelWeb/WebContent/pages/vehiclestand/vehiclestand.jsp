@@ -1,16 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Vehicle Stand</title>
 
-<script type="text/javascript"
-	src="<%=request.getContextPath()%>/js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/js/jquery-2.1.4.js"></script>
 
-<link rel="stylesheet" type="text/css"
-	href="<%=request.getContextPath()%>/style/controls.css" />
+<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/style/controls.css" />
 
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -48,15 +45,13 @@
 	</div>
 	<div>
 		<div>
-			<input id="vehicleId" name="vehicleId"
-				value="${vehicleBean.vehicleId }" type="hidden" />
+			<input id="vehicleId" name="vehicleId" value="${vehicleBean.vehicleId }" type="hidden" />
 		</div>
 		<div style="float: left; width: 250px;">
 			<span style="color: red">*</span> <label>Registration Number</label>
 		</div>
 		<div>
-			<input id="registrationNumber" name="registrationNumber"
-				value="${vehicleBean.registrationNumber }" />
+			<input id="registrationNumber" name="registrationNumber" value="${vehicleBean.registrationNumber }" />
 		</div>
 		<div style="float: left; width: 250px;">
 			<span style="color: red">*</span> <label>Vehicle Type</label>
@@ -71,8 +66,7 @@
 			<span style="color: red;">*</span><label>In Time</label>
 		</div>
 		<div>
-			<input id="inTime" value="${vehicleBean.inTime }" name="inTime"
-				readonly="readonly" class="width75px" />
+			<input id="inTime" value="${vehicleBean.inTime }" name="inTime" readonly="readonly" class="width75px" />
 		</div>
 		<div id="divOutTime">
 			<div style="float: left; width: 250px; clear: left;">
@@ -92,8 +86,7 @@
 			<span style="color: white;">*</span><label>Is Token Lost</label>
 		</div>
 		<div>
-			<input id="isTokenLost" name="isTokenLost" type="checkbox"
-				value="${vehicleBean.isTokenLost }" />
+			<input id="isTokenLost" name="isTokenLost" type="checkbox" value="${vehicleBean.isTokenLost }" />
 		</div>
 		<div id="divIsTokenLost" style="display: none;">
 			<div style="float: left; width: 250px; clear: left;">
